@@ -8,7 +8,7 @@ This repository contains code and prompt templates for our paper. It is made pub
 
 ## Contents
 
-- `prompts/` – Raw and/or processed datasets used in this project.
+- `prompt_templates/` – Raw and/or processed datasets used in this project.
 - `notebooks/` – Jupyter notebooks for analysis and visualization.
 - `README.md` – This file.
 - `LICENSE` – License information.
