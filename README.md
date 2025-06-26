@@ -4,7 +4,7 @@ This repository contains prompt templates for our paper (Multilingual Implicit D
 
 ## Contents
 
-- `prompt_templates/` – Raw and/or processed datasets used in this project.
+- `prompt_templates/` – Prompt templates used in our paper presented at the 28th International Conference on Text, Speech and Dialogue.
 - `README.md` – This file.
 - `LICENSE` – License information.
 
