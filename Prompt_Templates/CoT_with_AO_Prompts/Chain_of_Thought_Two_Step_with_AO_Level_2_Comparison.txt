@@ -1,0 +1,32 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Concession: An expected causal relation is canceled or denied by the situation described in one of the arguments.
+- Contrast: At least two differences between the arguments are highlighted.
+- Similarity: Highlights resemblance or equivalence between two discourse units.
+
+----Demonstrations----
+Arg-1: Success motivates us
+Arg-2: but a near win can propel us in an ongoing quest
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. These arguments are contrastive. The level-2 sense is Contrast.
+//
+Arg-1: That's 133 trillion combined
+Arg-2: That's eight and a half times the GDP of the U.S
+Answer: Arg-1 conveys a Fact. Arg-2 conveys another Fact. Arg-1 is the another way of explaining the Arg-2. The level-2 sense is Similarity.
+//
+Arg-1: these things are fundamental
+Arg-2: but they're not enough
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. Arg-2 does not fulfill the expectation given in Arg-1. The level-2 sense is Concession.
+
+----Inference----
+Based on these explanations, return the most probable level-2 sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

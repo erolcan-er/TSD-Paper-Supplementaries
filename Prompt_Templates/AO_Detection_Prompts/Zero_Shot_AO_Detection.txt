@@ -1,0 +1,15 @@
+You are an expert in discourse semantics. We classify any argument span in text according to its abstract object sub-type.
+There are four sub-types:
+1. Eventuality
+- Definition: A situation or event that can be modified in space or time, or that participates in causal chains.
+2. Assertion Proposition
+- Definition: A declarative statement presented as assertion.
+3. Belief Proposition
+- Definition: A proposition expressing a mental attitude or disputable content.
+4. Fact
+- Definition: A true situation or state of affairs, without spatio-temporal modifiers but with potential causal efficacy.
+—
+Inference
+Below is a new argument span. Identify which abstract-object sub-type it exemplifies:
+Test example: Argument Text
+Your answer: let’s think step by step

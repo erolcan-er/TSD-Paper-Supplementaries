@@ -1,0 +1,32 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Cause: The situations described in the arguments are causally influenced but are not in a conditional relation.
+- Cause+Belief: Evidence is provided to cause the hearer to believe a claim.
+- Purpose: One argument presents an action that an agent undertakes with the purpose of the goal conveyed by the other argument being achieved.
+
+----Demonstrations----
+Arg-1: I like it
+Arg-2: because it pokes fun at both sides of the climate change issue
+Answer: Here, Arg-2 provides the causal explanation for the feeling expressed in Arg-1. The word “because” directly links liking the subject to the reason it is appreciated. This fits the Cause label, where one event or claim is causally influenced by the other.
+//
+Arg-1: it's reckless to ignore these things
+Arg-2: doing so can jeopardize future long-term returns
+Answer: In this case, Arg-2 offers not only a causal effect (jeopardizing returns) but also serves as evidence to support the claim in Arg-1, encouraging the hearer to believe that ignoring the issues is indeed reckless. This extra persuasive, belief-inducing component justifies the Cause+Belief label.
+//
+Arg-1: you have to aim at something slightly skew from it
+Arg-2: in order that to actually hit your target
+Answer: Arg-2 clearly states the purpose behind the action described in Arg-1. The phrase “in order that” indicates that aiming off-center is done with the goal (or purpose) of successfully hitting the target. Thus, the relation is one of purpose. The sense is Purpose.
+
+----Inference----
+Based on these explanations, return the most probable Sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

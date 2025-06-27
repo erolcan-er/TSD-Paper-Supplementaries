@@ -1,0 +1,42 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Conjunction: Both arguments, which don’t directly relate to each other, bear the same relation to some other situation evoked in the discourse.
+- Equivalence: Both arguments are taken to describe the same situation, but from different perspectives.
+- Instantiation: One argument describes a situation as holding in a set of circumstances, while the other argument describes one or more of those circumstances.
+- Level-of-detail: Both arguments describe the same situation, but in less or more detail.
+- Substitution: Arguments are presented as exclusive alternatives, with one being ruled out.
+
+----Demonstrations----
+Arg-1: They're economic issues
+Arg-2: and that makes them relevant to risk and return
+Answer: Here, both arguments are connected in a way that they each contribute to a broader point. Arg-1 categorizes the issues, and Arg-2 links that category to a further concept (risk and return). The conjunction “and” shows that each argument independently relates to the same larger context. The sense is Conjunction.
+//
+Arg-1: Many cities are investing in green infrastructure to combat climate change
+Arg-2: New York City has implemented a large-scale tree-planting initiative to reduce urban heat and improve air quality
+Answer: Arg-1 provides a general statement about a trend across cities. Arg-2 then offers a specific example (instantiation) of that trend by citing New York City’s initiative. This is a classic case of instantiation where the specific example illustrates the broader phenomenon. The sense is Instantiation.
+//
+Arg-1: Let me remind you what we already know
+Arg-2: We have a population that's both growing and aging
+Answer: Arg-1 signals a reminder or summary, while Arg-2 provides the details that flesh out that reminder. The relation here is about elaborating on a known fact by adding more detail, which corresponds to Level-of-detail.
+//
+Arg-1: prudent investing and finance theory aren't subordinate to sustainability
+Arg-2: They're compatible
+Answer: The second argument reframes or substitutes the idea presented in the first. Instead of accepting a hierarchical relationship (subordination), it proposes an alternative view—that the two are compatible. This substitution of perspective justifies the label Substitution.
+//
+Arg-1: That's the world's largest economy
+Arg-2: That's some serious freaking firepower
+Answer: Although expressed differently, both arguments refer to the same entity and emphasize its magnitude. Arg-1 states it as a fact (largest economy), while Arg-2 offers a qualitative interpretation (serious firepower). They are equivalent in describing the same situation from different angles, hence the label Equivalence.
+
+----Inference----
+Based on these explanations, return the most probable Sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

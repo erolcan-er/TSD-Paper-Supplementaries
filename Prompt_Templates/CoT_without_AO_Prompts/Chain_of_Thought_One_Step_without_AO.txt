@@ -1,0 +1,82 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Temporal.Synchronous: There is some degree of temporal overlap between the events described by the arguments.
+- Temporal.Asynchronous: One event is described as preceding the other.
+- Contingency.Cause: The situations described in the arguments are causally influenced but are not in a conditional relation.
+- Contingency.Cause+Belief: Evidence is provided to cause the hearer to believe a claim.
+- Contingency.Purpose: One argument presents an action that an agent undertakes with the purpose of the goal conveyed by the other argument being achieved.
+- Comparison.Concession: An expected causal relation is canceled or denied by the situation described in one of the arguments.
+- Comparison.Contrast: At least two differences between the arguments are highlighted.
+- Comparison.Similarity: Highlights resemblance or equivalence between two discourse units.
+- Expansion.Conjunction: Both arguments, which don’t directly relate to each other, bear the same relation to some other situation evoked in the discourse.
+- Expansion.Equivalence: Both arguments are taken to describe the same situation, but from different perspectives.
+- Expansion.Instantiation: One argument describes a situation as holding in a set of circumstances, while the other argument describes one or more of those circumstances.
+- Expansion.Level-of-detail: Both arguments describe the same situation, but in less or more detail.
+- Expansion.Substitution: Arguments are presented as exclusive alternatives, with one being ruled out.
+
+----Demonstrations----
+Arg-1: I used magnetic resonance imaging to capture the actual shape of the patient's anatomy
+Arg-2: then use finite element modeling to better predict the internal stresses and strains on the normal forces
+Answer: The use of “then” signals a sequential order where the first event (capturing the anatomy) happens before the second event (modeling for prediction). This ordering—one event following the other in time—fits the definition of a Temporal.Asynchronous relation.
+//
+Arg-1: I stood and watched
+Arg-2: as the coach drove up these women in this gray van
+Answer: The connector “as” indicates that both events occur concurrently. The act of standing and watching happens at the same time as the coach’s arrival, demonstrating temporal overlap, which is characteristic of a Temporal.Synchronous relation.
+//
+Arg-1: I like it
+Arg-2: because it pokes fun at both sides of the climate change issue
+Answer: Here, Arg-2 provides the causal explanation for the feeling expressed in Arg-1. The word “because” directly links liking the subject to the reason it is appreciated. This fits the Contingency.Cause label, where one event or claim is causally influenced by the other.
+//
+Arg-1: it's reckless to ignore these things
+Arg-2: doing so can jeopardize future long-term returns
+Answer: In this case, Arg-2 offers not only a causal effect (jeopardizing returns) but also serves as evidence to support the claim in Arg-1, encouraging the hearer to believe that ignoring the issues is indeed reckless. This extra persuasive, belief-inducing component justifies the Contingency.Cause+Belief label.
+//
+Arg-1: you have to aim at something slightly skew from it
+Arg-2: in order that to actually hit your target
+Answer: Arg-2 clearly states the purpose behind the action described in Arg-1. The phrase “in order that” indicates that aiming off-center is done with the goal (or purpose) of successfully hitting the target. Thus, the relation is one of purpose. The sense is Contingency.Purpose.
+//
+Arg-1: Success motivates us
+Arg-2: but a near win can propel us in an ongoing quest
+Answer: The use of “but” highlights a contrast between the effects of success versus a near win. Even though both statements deal with motivation, they emphasize different kinds of outcomes, thereby contrasting two related yet distinct phenomena. The sense is Comparison.Contrast.
+//
+Arg-1: That's 133 trillion combined
+Arg-2: That's eight and a half times the GDP of the U.S
+Answer: Although each argument states a different numerical fact, Arg-2 is used to interpret or frame the magnitude mentioned in Arg-1. They both serve to illustrate the enormity of a quantity, highlighting a similarity or equivalence between the two perspectives. The sense is Comparison.Similarity.
+//
+Arg-1: these things are fundamental
+Arg-2: but they're not enough
+Answer: The second statement introduces a caveat to the first by conceding that, while the things in question are fundamental, they fall short of sufficiency. The “but” marks a cancellation of the expected positive evaluation, making it a concession. The sense is Comparison.Concession.
+//
+Arg-1: They're economic issues
+Arg-2: and that makes them relevant to risk and return
+Answer: Here, both arguments are connected in a way that they each contribute to a broader point. Arg-1 categorizes the issues, and Arg-2 links that category to a further concept (risk and return). The conjunction “and” shows that each argument independently relates to the same larger context. The sense is Expansion.Conjunction.
+//
+Arg-1: Many cities are investing in green infrastructure to combat climate change
+Arg-2: New York City has implemented a large-scale tree-planting initiative to reduce urban heat and improve air quality
+Answer: Arg-1 provides a general statement about a trend across cities. Arg-2 then offers a specific example (instantiation) of that trend by citing New York City’s initiative. This is a classic case of instantiation where the specific example illustrates the broader phenomenon. The sense is Expansion.Instantiation.
+//
+Arg-1: Let me remind you what we already know
+Arg-2: We have a population that's both growing and aging
+Answer: Arg-1 signals a reminder or summary, while Arg-2 provides the details that flesh out that reminder. The relation here is about elaborating on a known fact by adding more detail, which corresponds to Expansion.Level-of-detail.
+//
+Arg-1: prudent investing and finance theory aren't subordinate to sustainability
+Arg-2: They're compatible
+Answer: The second argument reframes or substitutes the idea presented in the first. Instead of accepting a hierarchical relationship (subordination), it proposes an alternative view—that the two are compatible. This substitution of perspective justifies the label Expansion.Substitution.
+//
+Arg-1: That's the world's largest economy
+Arg-2: That's some serious freaking firepower
+Answer: Although expressed differently, both arguments refer to the same entity and emphasize its magnitude. Arg-1 states it as a fact (largest economy), while Arg-2 offers a qualitative interpretation (serious firepower). They are equivalent in describing the same situation from different angles, hence the label Expansion.Equivalence.
+
+----Inference----
+Based on these explanations, return the most probable Sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

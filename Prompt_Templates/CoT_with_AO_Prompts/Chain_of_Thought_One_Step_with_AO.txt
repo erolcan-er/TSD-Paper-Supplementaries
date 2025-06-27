@@ -1,0 +1,82 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Temporal.Synchronous: There is some degree of temporal overlap between the events described by the arguments.
+- Temporal.Asynchronous: One event is described as preceding the other.
+- Contingency.Cause: The situations described in the arguments are causally influenced but are not in a conditional relation.
+- Contingency.Cause+Belief: Evidence is provided to cause the hearer to believe a claim.
+- Contingency.Purpose: One argument presents an action that an agent undertakes with the purpose of the goal conveyed by the other argument being achieved.
+- Comparison.Concession: An expected causal relation is canceled or denied by the situation described in one of the arguments.
+- Comparison.Contrast: At least two differences between the arguments are highlighted.
+- Comparison.Similarity: Highlights resemblance or equivalence between two discourse units.
+- Expansion.Conjunction: Both arguments, which don’t directly relate to each other, bear the same relation to some other situation evoked in the discourse.
+- Expansion.Equivalence: Both arguments are taken to describe the same situation, but from different perspectives.
+- Expansion.Instantiation: One argument describes a situation as holding in a set of circumstances, while the other argument describes one or more of those circumstances.
+- Expansion.Level-of-detail: Both arguments describe the same situation, but in less or more detail.
+- Expansion.Substitution: Arguments are presented as exclusive alternatives, with one being ruled out.
+
+----Demonstrations----
+Arg-1: I used magnetic resonance imaging to capture the actual shape of the patient's anatomy
+Arg-2: then use finite element modeling to better predict the internal stresses and strains on the normal forces
+Answer: Arg-1 conveys an Eventuality. Arg-2 conveys another Eventuality. These arguments are asynchronous. The sense is Temporal.Asynchronous.
+//
+Arg-1: I stood and watched
+Arg-2: as the coach drove up these women in this gray van
+Answer: Arg-1 conveys an Eventuality. Arg-2 conveys another Eventuality. These arguments are synchronous. The sense is Temporal.Synchronous.
+//
+Arg-1: I like it
+Arg-2: because it pokes fun at both sides of the climate change issue
+Answer: Arg-1 conveys a Belief Proposition. Arg-2 points conveys an Assertion Proposition. The Arg-2 causes the Arg-1 as a result. The sense is Contingency.Cause.
+//
+Arg-1: it's reckless to ignore these things
+Arg-2: doing so can jeopardize future long-term returns
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. It is believed that the Arg-1 might cause the Arg-2 as a result. The sense is Contingency.Cause+Belief.
+//
+Arg-1: you have to aim at something slightly skew from it
+Arg-2: in order that to actually hit your target
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. Arg-2 is the purpose of Arg-1. The sense is Contingency.Purpose.
+//
+Arg-1: Success motivates us
+Arg-2: but a near win can propel us in an ongoing quest
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. These arguments are contrastive. The sense is Comparison.Contrast.
+//
+Arg-1: That's 133 trillion combined
+Arg-2: That's eight and a half times the GDP of the U.S
+Answer: Arg-1 conveys a Fact. Arg-2 conveys another Fact. Arg-1 is the another way of explaining the Arg-2. The sense is Comparison.Similarity.
+//
+Arg-1: these things are fundamental
+Arg-2: but they're not enough
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. Arg-2 does not fulfill the expectation given in Arg-1. The sense is Comparison.Concession.
+//
+Arg-1: They're economic issues
+Arg-2: and that makes them relevant to risk and return
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. These Assertion Propositions occur in conjunction with each other. The sense is Expansion.Conjunction.
+//
+Arg-1: Many cities are investing in green infrastructure to combat climate change
+Arg-2: New York City has implemented a large-scale tree-planting initiative to reduce urban heat and improve air quality
+Answer: Arg-1 conveys an Eventuality. Arg-2 conveys another Eventuality. Arg-2 gives an example for the Arg-1. The sense is Expansion.Instantiation.
+//
+Arg-1: Let me remind you what we already know
+Arg-2: We have a population that's both growing and aging
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys a Fact. Arg-2 is giving details about the Arg-1. The sense is Expansion.Level-of-detail.
+//
+Arg-1: prudent investing and finance theory aren't subordinate to sustainability
+Arg-2: They're compatible
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. Arg-2 is a substitution of the proposition defined in Arg-1. The sense is Expansion.Substitution.
+//
+Arg-1: That's the world's largest economy
+Arg-2: That's some serious freaking firepower
+Answer: Arg-1 conveys a Fact. Arg-2 conveys an Assertion Proposition. Arg-2 describes the same proposition defined in Arg-1. The sense is Expansion.Equivalence.
+
+----Inference----
+Based on these explanations, return the most probable Sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

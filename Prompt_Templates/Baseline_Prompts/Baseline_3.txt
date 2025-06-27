@@ -1,0 +1,72 @@
+All answer select from following:
+A. Comparison.Concession, Nevertheless
+B. Comparison.Contrast, However
+C. Contingency.Cause, As a result
+D. Contingency.Cause+Belief, because
+E. Contingency.Purpose, So that
+F. Comparison.Similarity, Similarly
+G. Expansion.Conjunction, Moreover
+H. Expansion.Instantiation, For instance
+I. Contingency.Cause+Belief, because
+J. Temporal.Asynchronous, Before
+K. Temporal.Synchronous, Meanwhile
+L. Expansion.Level-of-detail, Specifically
+M. Expansion.Equivalence, In other words
+N. Expansion.Substitution, Instead of
+
+Arg-1: I used magnetic resonance imaging to capture the actual shape of the patient's anatomy
+Arg-2: then use finite element modeling to better predict the internal stresses and strains on the normal forces
+Answer: Temporal.Asynchronous
+//
+Arg-1: I stood and watched
+Arg-2: as the coach drove up these women in this gray van
+Answer: Temporal.Synchronous
+//
+Arg-1: I like it
+Arg-2: because it pokes fun at both sides of the climate change issue
+Answer: Contingency.Cause
+//
+Arg-1: it's reckless to ignore these things
+Arg-2: doing so can jeopardize future long-term returns
+Answer: Contingency.Cause+Belief
+//
+Arg-1: you have to aim at something slightly skew from it
+Arg-2: in order that to actually hit your target
+Answer: Contingency.Purpose
+//
+Arg-1: Success motivates us
+Arg-2: but a near win can propel us in an ongoing quest
+Answer: Comparison.Contrast
+//
+Arg-1: That's 133 trillion combined
+Arg-2: That's eight and a half times the GDP of the U.S
+Answer: Comparison.Similarity
+//
+Arg-1: these things are fundamental
+Arg-2: but they're not enough
+Answer: Comparison.Concession
+//
+Arg-1: They're economic issues
+Arg-2: and that makes them relevant to risk and return
+Answer: Expansion.Conjunction
+//
+Arg-1: Many cities are investing in green infrastructure to combat climate change
+Arg-2: New York City has implemented a large-scale tree-planting initiative to reduce urban heat and improve air quality
+Answer: Expansion.Instantiation
+//
+Arg-1: Let me remind you what we already know
+Arg-2: We have a population that's both growing and aging
+Answer: Expansion.Level-of-detail
+//
+Arg-1: prudent investing and finance theory aren't subordinate to sustainability
+Arg-2: They're compatible
+Answer: Expansion.Substitution
+//
+Arg-1: That's the world's largest economy
+Arg-2: That's some serious freaking firepower
+Answer: Expansion.Equivalence
+
+Argument 1: {Arg-1 Text}
+Argument 2: {Arg-2 Text}
+Question:What is the discourse relation between Argument 1 and Argument 2?
+Answer:

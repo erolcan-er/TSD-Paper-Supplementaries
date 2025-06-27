@@ -1,0 +1,8 @@
+    "You are a language expert.\n"
+    "Task: Identify the most suitable option from the list below that describes the discourse relationship "
+    "between the following pair of arguments.\n\n"
+    "Argument 1: {Arg-1}\n"
+    "Argument 2: {Arg-2}\n\n"
+    "Options:\n"
+    "{options}\n"
+    "Answer: ?"

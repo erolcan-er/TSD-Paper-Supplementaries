@@ -1,0 +1,32 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Concession: An expected causal relation is canceled or denied by the situation described in one of the arguments.
+- Contrast: At least two differences between the arguments are highlighted.
+- Similarity: Highlights resemblance or equivalence between two discourse units.
+
+----Demonstrations----
+Arg-1: Success motivates us
+Arg-2: but a near win can propel us in an ongoing quest
+Answer: The use of “but” highlights a contrast between the effects of success versus a near win. Even though both statements deal with motivation, they emphasize different kinds of outcomes, thereby contrasting two related yet distinct phenomena. The sense is Contrast.
+//
+Arg-1: That's 133 trillion combined
+Arg-2: That's eight and a half times the GDP of the U.S
+Answer: Although each argument states a different numerical fact, Arg-2 is used to interpret or frame the magnitude mentioned in Arg-1. They both serve to illustrate the enormity of a quantity, highlighting a similarity or equivalence between the two perspectives. The sense is Similarity.
+//
+Arg-1: these things are fundamental
+Arg-2: but they're not enough
+Answer: The second statement introduces a caveat to the first by conceding that, while the things in question are fundamental, they fall short of sufficiency. The “but” marks a cancellation of the expected positive evaluation, making it a concession. The sense is Concession.
+
+----Inference----
+Based on these explanations, return the most probable Sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

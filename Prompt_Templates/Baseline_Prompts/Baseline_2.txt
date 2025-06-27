@@ -1,0 +1,19 @@
+Argument 1: {Arg-1 Text}
+Argument 2: {Arg-2 Text}
+Question:What is the discourse relation between Argument 1 and Argument 2?
+A. Comparison.Concession, Nevertheless
+B. Comparison.Contrast, However
+C. Contingency.Cause, As a result
+D. Contingency.Cause+Belief, because
+E. Contingency.Purpose, So that
+F. Comparison.Similarity, Similarly
+G. Expansion.Conjunction, Moreover
+H. Expansion.Instantiation, For instance
+I. Contingency.Cause+Belief, because
+J. Temporal.Asynchronous, Before
+K. Temporal.Synchronous, Meanwhile
+L. Expansion.Level-of-detail, Specifically
+M. Expansion.Equivalence, In other words
+N. Expansion.Substitution, Instead of
+Answer:
+

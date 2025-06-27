@@ -1,0 +1,47 @@
+—-Instruction—-
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments
+of text called arguments: Arg-1 and Arg-2. Discourse relations are categorized within a hierarchical
+sense inventory. These senses provide a detailed classification of discourse relations. We wanted to
+determine the sense of our discourse relation.
+—-Definitions—-
+- Temporal.Synchronous: There is some degree of temporal overlap between the events described by the
+arguments.
+- Temporal.Asynchronous: One event is described as preceding the other.
+- Contingency.Cause: The situations described in the arguments are causally influenced but are not
+in a conditional relation.
+- Contingency.Cause+Belief: Evidence is provided to cause the hearer to believe a claim.
+- Contingency.Purpose: One argument presents an action that an agent undertakes with the purpose of
+the goal conveyed by the other argument being achieved.
+- Contingency.Condition: One argument presents a situation that must be met for the other argument
+to hold.
+- Comparison.Concession: An expected causal relation is canceled or denied by the situation described
+in one of the arguments.
+- Comparison.Contrast: At least two differences between the arguments are highlighted.
+- Expansion.Conjunction: Both arguments, which don’t directly relate to each other, bear the same
+relation to some other situation evoked in the discourse.
+- Expansion.Equivalence: Both arguments are taken to describe the same situation, but from different
+perspectives.
+- Expansion.Instantiation: One argument describes a situation as holding in a set of circumstances,
+while the other argument describes one or more of those circumstances.
+- Expansion.Level-of-detail: Both arguments describe the same situation, but in less or more detail.
+- Expansion.Substitution: Arguments are presented as exclusive alternatives, with one being ruled
+out.
+- Expansion.Manner: One argument describes the way in which the situation in the other argument is
+carried out.
+—-Demonstrations—-
+—-Sample-1—-
+Arg1: Success motivates us
+Arg2: but a near win can propel us in an ongoing quest
+Answer: Comparison.Contrast.
+.
+.
+—-Sample-N—-
+Arg1: they are really complex and they can seem really far off
+Arg2: that the temptation may be to do this
+Answer: Contingency.Cause.
+—-Inference—-
+Based on these explanations, return the most probable sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let’s think step by step.
+Argument 1: {Arg-1 Text}
+Argument 2: {Arg-2 Text}
+Answer:

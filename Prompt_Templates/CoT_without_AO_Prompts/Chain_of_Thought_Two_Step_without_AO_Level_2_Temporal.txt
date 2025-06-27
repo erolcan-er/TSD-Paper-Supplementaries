@@ -1,0 +1,27 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Synchronous: There is some degree of temporal overlap between the events described by the arguments.
+- Asynchronous: One event is described as preceding the other.
+
+----Demonstrations----
+Arg-1: I used magnetic resonance imaging to capture the actual shape of the patient's anatomy
+Arg-2: then use finite element modeling to better predict the internal stresses and strains on the normal forces
+Answer: The use of “then” signals a sequential order where the first event (capturing the anatomy) happens before the second event (modeling for prediction). This ordering—one event following the other in time—fits the definition of a Asynchronous relation.
+//
+Arg-1: I stood and watched
+Arg-2: as the coach drove up these women in this gray van
+Answer: The connector “as” indicates that both events occur concurrently. The act of standing and watching happens at the same time as the coach’s arrival, demonstrating temporal overlap, which is characteristic of a Synchronous relation.
+
+----Inference----
+Based on these explanations, return the most probable Sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:

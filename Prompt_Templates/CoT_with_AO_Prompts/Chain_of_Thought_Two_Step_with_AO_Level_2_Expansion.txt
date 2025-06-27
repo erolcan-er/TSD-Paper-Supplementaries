@@ -1,0 +1,42 @@
+----Instruction----
+In the Penn Discourse Treebank (PDTB), discourse relations are typically defined between two segments of text called arguments: Arg-1 and Arg-2.
+These arguments can be abstract objects such as Assertion Proposition, Belief Proposition, Eventualities, or Facts.
+Discourse relations are categorized within a hierarchical sense inventory.
+These senses provide a detailed classification of discourse relations.
+We wanted to determine the sense of our discourse relation.
+
+----Definitions----
+- Conjunction: Both arguments, which don’t directly relate to each other, bear the same relation to some other situation evoked in the discourse.
+- Equivalence: Both arguments are taken to describe the same situation, but from different perspectives.
+- Instantiation: One argument describes a situation as holding in a set of circumstances, while the other argument describes one or more of those circumstances.
+- Level-of-detail: Both arguments describe the same situation, but in less or more detail.
+- Substitution: Arguments are presented as exclusive alternatives, with one being ruled out.
+
+----Demonstrations----
+Arg-1: They're economic issues
+Arg-2: and that makes them relevant to risk and return
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. These Assertion Propositions occur in conjunction with each other. The level-2 sense is Conjunction.
+//
+Arg-1: Many cities are investing in green infrastructure to combat climate change
+Arg-2: New York City has implemented a large-scale tree-planting initiative to reduce urban heat and improve air quality
+Answer: Arg-1 conveys an Eventuality. Arg-2 conveys another Eventuality. Arg-2 gives an example for the Arg-1. The level-2 sense is Instantiation.
+//
+Arg-1: Let me remind you what we already know
+Arg-2: We have a population that's both growing and aging
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys a Fact. Arg-2 is giving details about the Arg-1. The level-2 sense is Level-of-detail.
+//
+Arg-1: prudent investing and finance theory aren't subordinate to sustainability
+Arg-2: They're compatible
+Answer: Arg-1 conveys an Assertion Proposition. Arg-2 conveys another Assertion Proposition. Arg-2 is a substitution of the proposition defined in Arg-1. The level-2 sense is Substitution.
+//
+Arg-1: That's the world's largest economy
+Arg-2: That's some serious freaking firepower
+Answer: Arg-1 conveys a Fact. Arg-2 conveys an Assertion Proposition. Arg-2 describes the same proposition defined in Arg-1. The level-2 sense is Equivalence.
+
+----Inference----
+Based on these explanations, return the most probable level-2 sense given two components (Arg-1, Arg-2) below.
+Just return the output with no commentary. Let's think step by step.
+
+Arg-1: {Arg-1 Text}
+Arg-2: {Arg-2 Text}
+Answer:
